@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { FirstPersonControls } from "three/addons/controls/FirstPersonControls.js";
 
 console.log(THREE);
 const canvas = document.querySelector("canvas.webgl");
@@ -21,7 +22,9 @@ const camPos = {
 // Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
 camera.position.z = 10;
+camera.position.y = 5;
 scene.add(camera);
+const controls = new FirstPersonControls(camera, canvas);
 
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
@@ -37,6 +40,13 @@ const geometry = new THREE.BoxGeometry(1, 1, 1);
 const material = new THREE.MeshBasicMaterial({
   color: 0xfff0ff,
   wireframe: true,
+});
+
+//background
+
+const loader = new THREE.TextureLoader();
+loader.load("bg-minecraft.jpg", (texture) => {
+  scene.background = texture;
 });
 
 // Steve
@@ -796,24 +806,23 @@ const keysPressed = {
 };
 
 let angleX = 0;
-let angleY = 10;
+let angleY = 0;
 let radius = 10;
 let speed = 0.02;
 
 const tick = () => {
+  angleX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, angleX));
   // Rotation continue si flèches sont pressées
-  if (keysPressed.ArrowLeft) angleY -= speed;
-  if (keysPressed.ArrowRight) angleY += speed;
-  if (keysPressed.ArrowUp) angleX -= speed;
-  if (keysPressed.ArrowDown) angleX += speed;
+  if (keysPressed.ArrowLeft) angleY += speed;
+  if (keysPressed.ArrowRight) angleY -= speed;
+  if (keysPressed.ArrowUp) angleX += speed;
+  if (keysPressed.ArrowDown) angleX -= speed;
 
-  // Mise à jour des positions
   camPos.x = Math.cos(angleX) * Math.cos(angleY) * radius;
   camPos.y = Math.sin(angleX) * radius;
   camPos.z = Math.cos(angleX) * Math.sin(angleY) * radius;
 
-  camera.position.set(camPos.x, camPos.y, camPos.z);
-  camera.lookAt(0, 0, 0);
+  controls.update(0.1);
 
   renderer.render(scene, camera);
   window.requestAnimationFrame(tick);

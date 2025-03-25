@@ -1,0 +1,8 @@
+Model Information:
+* title:	Minecraft Cuy (Guinea Pig)
+* source:	https://sketchfab.com/3d-models/minecraft-cuy-guinea-pig-1e2e63f77fa248ed90ffac5099067bc1
+* author:	Yael (https://sketchfab.com/YaelGamerHD)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

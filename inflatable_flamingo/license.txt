@@ -1,0 +1,11 @@
+Model Information:
+* title:	Inflatable Flamingo
+* source:	https://sketchfab.com/3d-models/inflatable-flamingo-f8de7acb0983445bb67c9cb07ab4cd3f
+* author:	Hlamingo (https://sketchfab.com/Hlamingo)
+
+Model License:
+* license type:	CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)
+* requirements:	Author must be credited. Modified versions can not be distributed. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Inflatable Flamingo" (https://sketchfab.com/3d-models/inflatable-flamingo-f8de7acb0983445bb67c9cb07ab4cd3f) by Hlamingo (https://sketchfab.com/Hlamingo) licensed under CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)

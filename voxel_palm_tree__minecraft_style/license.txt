@@ -1,0 +1,11 @@
+Model Information:
+* title:	Voxel Palm tree / Minecraft style
+* source:	https://sketchfab.com/3d-models/voxel-palm-tree-minecraft-style-c34e6d62619b41eabfe6c539e38a4acb
+* author:	Rovani (https://sketchfab.com/rovani)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Voxel Palm tree / Minecraft style" (https://sketchfab.com/3d-models/voxel-palm-tree-minecraft-style-c34e6d62619b41eabfe6c539e38a4acb) by Rovani (https://sketchfab.com/rovani) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

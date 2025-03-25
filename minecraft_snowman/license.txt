@@ -1,0 +1,11 @@
+Model Information:
+* title:	[MINECRAFT] snowman
+* source:	https://sketchfab.com/3d-models/minecraft-snowman-b8bb9d316e344b5882b5db1284a234ac
+* author:	ounzi (https://sketchfab.com/ounzi)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "[MINECRAFT] snowman" (https://sketchfab.com/3d-models/minecraft-snowman-b8bb9d316e344b5882b5db1284a234ac) by ounzi (https://sketchfab.com/ounzi) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

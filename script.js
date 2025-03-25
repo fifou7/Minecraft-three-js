@@ -72,9 +72,9 @@ gltfLoader3.load("flamingo_-_minecraft_model/scene.gltf", (gltf) => {
   gltf.scene.rotation.y = 3;
 });
 
-const gltfLoader20 = new GLTFLoader();
+const gltfLoader19 = new GLTFLoader();
 
-gltfLoader20.load("flamingo_-_minecraft_model/scene.gltf", (gltf) => {
+gltfLoader19.load("flamingo_-_minecraft_model/scene.gltf", (gltf) => {
   scene.add(gltf.scene);
   gltf.scene.scale.set(0.1, 0.1, 0.1);
   gltf.scene.position.set(-19, 0.5, -2.5);

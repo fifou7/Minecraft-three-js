@@ -182,7 +182,79 @@ gltfLoader7.load("noot_noot_meme_minecraft/scene.gltf", (gltf) => {
   scene.add(gltf.scene);
   gltf.scene.scale.set(1, 1, 1);
   gltf.scene.position.set(10, 0.6, 4);
-  gltf.scene.rotation.y = 0.5;
+  gltf.scene.rotation.y = -1;
+});
+
+const gltfLoader21 = new GLTFLoader();
+
+gltfLoader21.load("minecraft/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(0.8, 0.8, 0.8);
+  gltf.scene.position.set(-1.1, 1.3, -14.5);
+  gltf.scene.rotation.y = 5.5;
+});
+
+const gltfLoader23 = new GLTFLoader();
+
+gltfLoader23.load("block_bird/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.position.set(-5, 6, -15.5);
+  gltf.scene.rotation.y = 4;
+});
+
+const gltfLoader24 = new GLTFLoader();
+
+gltfLoader24.load("block_bird/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.position.set(-4.5, 7.25, -16.5);
+  gltf.scene.rotation.y = 3.5;
+});
+
+const gltfLoader25 = new GLTFLoader();
+
+gltfLoader25.load("ninfa_minecraft/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(0.3, 0.3, 0.3);
+  gltf.scene.position.set(-2, 6.2, -18);
+  gltf.scene.rotation.y = 5.5;
+});
+
+const gltfLoader20 = new GLTFLoader();
+
+gltfLoader20.load("minecraft_cat_lying/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(0.08, 0.08, 0.08);
+  gltf.scene.position.set(2.5, 0.6, -12);
+  gltf.scene.rotation.y = -2.5;
+});
+
+const gltfLoader26 = new GLTFLoader();
+
+gltfLoader26.load("dog__minecraft__galliano_giuseppe/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(0.012, 0.012, 0.012);
+  gltf.scene.position.set(-3.5, 0.6, -11.5);
+  gltf.scene.rotation.y = 0.35;
+});
+
+const gltfLoader28 = new GLTFLoader();
+
+gltfLoader28.load("snow_sniffer/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(0.8, 0.8, 0.8);
+  gltf.scene.position.set(16, 1, -2);
+  gltf.scene.rotation.y = 2.5;
+});
+
+const gltfLoader29 = new GLTFLoader();
+
+gltfLoader29.load("mountain_enderman/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.position.set(13, 0.6, 4);
+  gltf.scene.rotation.y = -0.5;
 });
 
 // infrastructures
@@ -196,13 +268,13 @@ gltfLoader11.load("minecraft_snowman/scene.gltf", (gltf) => {
   gltf.scene.rotation.y = 5.1;
 });
 
-const gltfLoader14 = new GLTFLoader();
+const gltfLoader10 = new GLTFLoader();
 
-gltfLoader14.load("voxel_palm_tree__minecraft_style/scene.gltf", (gltf) => {
+gltfLoader10.load("cluttered_sand_patch_minecraft/scene.gltf", (gltf) => {
   scene.add(gltf.scene);
-  gltf.scene.scale.set(1, 1, 1);
-  gltf.scene.position.set(-17, 0, 3);
-  gltf.scene.rotation.y = 0;
+  gltf.scene.scale.set(0.8, 0.8, 0.8);
+  gltf.scene.position.set(-13, 0.42, 3.25);
+  gltf.scene.rotation.y = 5.5;
 });
 
 // bridges
@@ -243,6 +315,35 @@ gltfLoader16.load("simple-bridge/scene.gltf", (gltf) => {
   gltf.scene.rotation.y = 1.58;
 });
 
+// trees
+
+const gltfLoader14 = new GLTFLoader();
+
+gltfLoader14.load("voxel_palm_tree__minecraft_style/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.position.set(-17, 0, 1.9);
+  gltf.scene.rotation.y = 0;
+});
+
+const gltfLoader22 = new GLTFLoader();
+
+gltfLoader22.load("minecraft_tree/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(8, 8, 8);
+  gltf.scene.position.set(-4.5, -3, -19);
+  gltf.scene.rotation.y = 5.5;
+});
+
+const gltfLoader27 = new GLTFLoader();
+
+gltfLoader27.load("spruce-tree/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(5, 5, 5);
+  gltf.scene.position.set(18.5, 1, 2.75);
+  gltf.scene.rotation.y = 5.5;
+});
+
 // flowers
 
 const gltfLoader17 = new GLTFLoader();
@@ -272,15 +373,6 @@ gltfLoader19.load("minecraft_american_flag_of_flowers/scene.gltf", (gltf) => {
   gltf.scene.rotation.y = 1.58;
 });
 
-const gltfLoader20 = new GLTFLoader();
-
-gltfLoader20.load("minecraft_bee_with_3d_flower/scene.gltf", (gltf) => {
-  scene.add(gltf.scene);
-  gltf.scene.scale.set(2, 2, 2);
-  gltf.scene.position.set(-0.5, 0, -16.5);
-  gltf.scene.rotation.y = 1.58;
-});
-
 // lights
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 1);
@@ -294,7 +386,74 @@ const snow = TextureLoader.load("/snow.png");
 const sand = TextureLoader.load("/sand.png");
 const ground = TextureLoader.load("/ground.webp");
 const autumn = TextureLoader.load("/autumn.png");
-const overlay_texture_tulip = TextureLoader.load("/flower_tulip_red.png");
+const water = TextureLoader.load("/water_placeholder.png");
+
+// water
+
+const water_beach = new THREE.Group();
+scene.add(water_beach);
+water_beach.position.set(-18, 1, 5);
+
+for (let x = 0; x < 10; x++) {
+  for (let z = 0; z < 4; z++) {
+    const bloc = new THREE.Mesh(
+      new THREE.BoxGeometry(1, 1, 1),
+      new THREE.MeshBasicMaterial({ map: water })
+    );
+    bloc.position.set(x, 0, -z);
+    water_beach.add(bloc);
+    water_beach.rotation.y = 1.58;
+  }
+}
+
+for (let x = 0; x < 10; x++) {
+  for (let y = 0; y < 50; y++) {
+    const bloc = new THREE.Mesh(
+      new THREE.BoxGeometry(1, 1, 1),
+      new THREE.MeshBasicMaterial({ map: water })
+    );
+    bloc.position.set(x, -y, -3);
+    water_beach.add(bloc);
+    water_beach.rotation.y = 1.58;
+  }
+}
+
+const water_beach_p2 = new THREE.Group();
+scene.add(water_beach_p2);
+water_beach_p2.position.set(-21, 1, 9);
+
+for (let x = 0; x < 4; x++) {
+  for (let y = 0; y < 50; y++) {
+    const bloc = new THREE.Mesh(
+      new THREE.BoxGeometry(1, 1, 1),
+      new THREE.MeshBasicMaterial({ map: water })
+    );
+    bloc.position.set(x, -y, -3);
+    water_beach_p2.add(bloc);
+    water_beach_p2.rotation.y = 0;
+  }
+}
+
+const water_beach_p3 = new THREE.Group();
+scene.add(water_beach_p3);
+water_beach_p3.position.set(-21.085, 1, -1.97);
+
+for (let x = 0; x < 4; x++) {
+  for (let y = 0; y < 50; y++) {
+    const bloc = new THREE.Mesh(
+      new THREE.BoxGeometry(1, 1, 1),
+      new THREE.MeshBasicMaterial({ map: water })
+    );
+    bloc.position.set(x, -y, -3);
+    water_beach_p3.add(bloc);
+    water_beach_p3.rotation.y = 0;
+  }
+}
+
+water.colorSpace = THREE.SRGBColorSpace;
+water.repeat.set(1, 1);
+water.wrapS = THREE.RepeatWrapping;
+water.wrapT = THREE.RepeatWrapping;
 
 //île 1: île de Steve
 

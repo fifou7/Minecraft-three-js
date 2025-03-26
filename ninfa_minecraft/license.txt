@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ninfa Minecraft
+* source:	https://sketchfab.com/3d-models/ninfa-minecraft-0627ad2bf1584b599dea446bb8190b9a
+* author:	Dante_Avendaño (https://sketchfab.com/dante_0721)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ninfa Minecraft" (https://sketchfab.com/3d-models/ninfa-minecraft-0627ad2bf1584b599dea446bb8190b9a) by Dante_Avendaño (https://sketchfab.com/dante_0721) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

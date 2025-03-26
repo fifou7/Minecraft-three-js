@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cluttered Sand Patch [minecraft]
+* source:	https://sketchfab.com/3d-models/cluttered-sand-patch-minecraft-f86fe08111714276872cbb0c1c7a27c2
+* author:	Low-poly Blast (https://sketchfab.com/alexandurgeorgiev49)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cluttered Sand Patch [minecraft]" (https://sketchfab.com/3d-models/cluttered-sand-patch-minecraft-f86fe08111714276872cbb0c1c7a27c2) by Low-poly Blast (https://sketchfab.com/alexandurgeorgiev49) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

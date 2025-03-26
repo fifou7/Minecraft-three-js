@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import { FirstPersonControls } from "three/addons/controls/FirstPersonControls.js";
+
+import { PointerLockControls } from "three/addons/controls/PointerLockControls.js";
 
 console.log(THREE);
 const canvas = document.querySelector("canvas.webgl");
@@ -24,7 +25,64 @@ const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
 camera.position.z = 10;
 camera.position.y = 5;
 scene.add(camera);
-const controls = new FirstPersonControls(camera, canvas);
+
+const controls = new PointerLockControls(camera, document.body);
+
+document.addEventListener("click", () => {
+  // Lock pointer on click
+
+  controls.lock();
+});
+
+let moveSpeed = 0.1;
+let moveForward = false;
+let moveBackward = false;
+let moveLeft = false;
+let moveRight = false;
+
+function handleMovement() {
+  if (controls.isLocked) {
+    // Logique de mouvement
+    if (moveForward) camera.translateZ(-moveSpeed);
+    if (moveBackward) camera.translateZ(moveSpeed);
+    if (moveLeft) camera.translateX(-moveSpeed);
+    if (moveRight) camera.translateX(moveSpeed);
+  }
+}
+
+document.addEventListener("keydown", (event) => {
+  switch (event.code) {
+    case "KeyW":
+      moveForward = true;
+      break;
+    case "KeyS":
+      moveBackward = true;
+      break;
+    case "KeyA":
+      moveLeft = true;
+      break;
+    case "KeyD":
+      moveRight = true;
+      break;
+  }
+});
+
+document.addEventListener("keyup", (event) => {
+  switch (event.code) {
+    case "KeyW":
+      moveForward = false;
+      break;
+    case "KeyS":
+      moveBackward = false;
+      break;
+    case "KeyA":
+      moveLeft = false;
+      break;
+    case "KeyD":
+      moveRight = false;
+      break;
+  }
+});
 
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
@@ -71,20 +129,11 @@ gltfLoader2.load("crafting_table/scene.gltf", (gltf) => {
   gltf.scene.rotation.y = 0;
 });
 
-// animaux
+// animals
 
 const gltfLoader3 = new GLTFLoader();
 
 gltfLoader3.load("flamingo_-_minecraft_model/scene.gltf", (gltf) => {
-  scene.add(gltf.scene);
-  gltf.scene.scale.set(0.1, 0.1, 0.1);
-  gltf.scene.position.set(-19, 0.5, -2.5);
-  gltf.scene.rotation.y = 3;
-});
-
-const gltfLoader19 = new GLTFLoader();
-
-gltfLoader19.load("flamingo_-_minecraft_model/scene.gltf", (gltf) => {
   scene.add(gltf.scene);
   gltf.scene.scale.set(0.1, 0.1, 0.1);
   gltf.scene.position.set(-19, 0.5, -2.5);
@@ -194,6 +243,44 @@ gltfLoader16.load("simple-bridge/scene.gltf", (gltf) => {
   gltf.scene.rotation.y = 1.58;
 });
 
+// flowers
+
+const gltfLoader17 = new GLTFLoader();
+
+gltfLoader17.load("minecraft_american_flag_of_flowers/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.position.set(-3.9, 0, -16.5);
+  gltf.scene.rotation.y = 1.58;
+});
+
+const gltfLoader18 = new GLTFLoader();
+
+gltfLoader18.load("minecraft_american_flag_of_flowers/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.position.set(2.9, 0, -16.5);
+  gltf.scene.rotation.y = 1.58;
+});
+
+const gltfLoader19 = new GLTFLoader();
+
+gltfLoader19.load("minecraft_american_flag_of_flowers/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.position.set(-0.5, 0, -16.5);
+  gltf.scene.rotation.y = 1.58;
+});
+
+const gltfLoader20 = new GLTFLoader();
+
+gltfLoader20.load("minecraft_bee_with_3d_flower/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(2, 2, 2);
+  gltf.scene.position.set(-0.5, 0, -16.5);
+  gltf.scene.rotation.y = 1.58;
+});
+
 // lights
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 1);
@@ -207,6 +294,7 @@ const snow = TextureLoader.load("/snow.png");
 const sand = TextureLoader.load("/sand.png");
 const ground = TextureLoader.load("/ground.webp");
 const autumn = TextureLoader.load("/autumn.png");
+const overlay_texture_tulip = TextureLoader.load("/flower_tulip_red.png");
 
 //île 1: île de Steve
 
@@ -811,17 +899,8 @@ let radius = 10;
 let speed = 0.02;
 
 const tick = () => {
-  angleX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, angleX));
-  // Rotation continue si flèches sont pressées
-  if (keysPressed.ArrowLeft) angleY += speed;
-  if (keysPressed.ArrowRight) angleY -= speed;
-  if (keysPressed.ArrowUp) angleX += speed;
-  if (keysPressed.ArrowDown) angleX -= speed;
-
-  camPos.x = Math.cos(angleX) * Math.cos(angleY) * radius;
-  camPos.y = Math.sin(angleX) * radius;
-  camPos.z = Math.cos(angleX) * Math.sin(angleY) * radius;
-
+  // Maj PointerLock
+  handleMovement();
   controls.update(0.1);
 
   renderer.render(scene, camera);
@@ -829,21 +908,3 @@ const tick = () => {
 };
 
 tick();
-
-window.addEventListener("keydown", (e) => {
-  if (e.key in keysPressed) keysPressed[e.key] = true;
-});
-
-window.addEventListener("keyup", (e) => {
-  if (e.key in keysPressed) keysPressed[e.key] = false;
-});
-
-// Zoom molette
-window.addEventListener("wheel", (e) => {
-  radius += e.deltaY * 0.01;
-  radius = Math.max(1, radius); // Empêche le zoom négatif
-
-  camPos.x = Math.cos(angleX) * Math.cos(angleY) * radius;
-  camPos.y = Math.sin(angleX) * radius;
-  camPos.z = Math.cos(angleX) * Math.sin(angleY) * radius;
-});

@@ -344,6 +344,15 @@ gltfLoader27.load("spruce-tree/scene.gltf", (gltf) => {
   gltf.scene.rotation.y = 5.5;
 });
 
+const gltfLoader30 = new GLTFLoader();
+
+gltfLoader30.load("christmas_tree/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1.5, 1.5, 1.5);
+  gltf.scene.position.set(13.5, 1, 0.5);
+  gltf.scene.rotation.y = 5.5;
+});
+
 // flowers
 
 const gltfLoader17 = new GLTFLoader();

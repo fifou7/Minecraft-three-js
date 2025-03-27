@@ -1,0 +1,11 @@
+Model Information:
+* title:	Minecraft Love Mushrooms
+* source:	https://sketchfab.com/3d-models/minecraft-love-mushrooms-02baaa2094a14b8db4a822cd9491406d
+* author:	A Burnt Piece Of Chicken (https://sketchfab.com/That_guy_in_your_walls)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Minecraft Love Mushrooms" (https://sketchfab.com/3d-models/minecraft-love-mushrooms-02baaa2094a14b8db4a822cd9491406d) by A Burnt Piece Of Chicken (https://sketchfab.com/That_guy_in_your_walls) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

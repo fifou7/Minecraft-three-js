@@ -257,6 +257,15 @@ gltfLoader29.load("mountain_enderman/scene.gltf", (gltf) => {
   gltf.scene.rotation.y = -0.5;
 });
 
+const gltfLoader32 = new GLTFLoader();
+
+gltfLoader32.load("fox_minecraft/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(0.8, 0.8, 0.8);
+  gltf.scene.position.set(3.5, 1.5, 20);
+  gltf.scene.rotation.y = -0.5;
+});
+
 // infrastructures
 
 const gltfLoader11 = new GLTFLoader();
@@ -344,6 +353,33 @@ gltfLoader27.load("spruce-tree/scene.gltf", (gltf) => {
   gltf.scene.rotation.y = 5.5;
 });
 
+const gltfLoader30 = new GLTFLoader();
+
+gltfLoader30.load("christmas_tree/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1.5, 1.5, 1.5);
+  gltf.scene.position.set(13.5, 1, 0.5);
+  gltf.scene.rotation.y = 5.5;
+});
+
+const gltfLoader31 = new GLTFLoader();
+
+gltfLoader31.load("minecraft_bench_model/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1.5, 1.5, 1.5);
+  gltf.scene.position.set(-3.5, 0.5, 20);
+  gltf.scene.rotation.y = 5.5;
+});
+
+const gltfLoader34 = new GLTFLoader();
+
+gltfLoader34.load("gravity_falls_journal_3/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1.5, 1.5, 1.5);
+  gltf.scene.position.set(-3.5, 2, 14);
+  gltf.scene.rotation.y = 3.8;
+});
+
 // flowers
 
 const gltfLoader17 = new GLTFLoader();
@@ -373,10 +409,67 @@ gltfLoader19.load("minecraft_american_flag_of_flowers/scene.gltf", (gltf) => {
   gltf.scene.rotation.y = 1.58;
 });
 
+const gltfLoader33 = new GLTFLoader();
+
+gltfLoader33.load("minecraft_love_mushrooms/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.position.set(2.5, 0.5, 13);
+  gltf.scene.rotation.y = 1.58;
+});
+
+const gltfLoader36 = new GLTFLoader();
+
+gltfLoader36.load("minecraft_love_mushrooms/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.position.set(2.5, 1, 15);
+  gltf.scene.rotation.y = 3;
+});
+
+const gltfLoader37 = new GLTFLoader();
+
+gltfLoader37.load("minecraft_love_mushrooms/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1.5, 1.5, 1.5);
+  gltf.scene.position.set(0, 1, 19);
+  gltf.scene.rotation.y = 0;
+});
+
+const gltfLoader38 = new GLTFLoader();
+
+gltfLoader38.load("minecraft_love_mushrooms/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.position.set(-4, 1, 15);
+  gltf.scene.rotation.y = 3;
+});
+
+const gltfLoader39 = new GLTFLoader();
+
+gltfLoader39.load("minecraft_love_mushrooms/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.position.set(-3, 1, 12.5);
+  gltf.scene.rotation.y = 8;
+});
+
 // lights
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambientLight);
+
+// Alex
+
+const gltfLoader35 = new GLTFLoader();
+
+gltfLoader35.load("alex/scene.gltf", (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.scale.set(0.018, 0.018, 0.018);
+  gltf.scene.position.set(-0.5, 0.8, 15);
+  gltf.scene.rotation.y = -3.2;
+  gltf.scene.rotation.x = 1.6;
+});
 
 // Textures
 

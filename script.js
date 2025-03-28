@@ -494,62 +494,6 @@ const waterBlock = new THREE.Mesh(
 waterBlock.position.set(-20, -3.5, 0);
 scene.add(waterBlock);
 
-// for (let x = 0; x < 10; x++) {
-//   for (let z = 0; z < 4; z++) {
-//     const bloc = new THREE.Mesh(
-//       new THREE.BoxGeometry(1, 1, 1),
-//       new THREE.MeshBasicMaterial({ map: water })
-//     );
-//     bloc.position.set(x, 0, -z);
-//     water_beach.add(bloc);
-//     water_beach.rotation.y = 1.58;
-//   }
-// }
-
-// for (let x = 0; x < 10; x++) {
-//   for (let y = 0; y < 50; y++) {
-//     const bloc = new THREE.Mesh(
-//       new THREE.BoxGeometry(1, 1, 1),
-//       new THREE.MeshBasicMaterial({ map: water })
-//     );
-//     bloc.position.set(x, -y, -3);
-//     water_beach.add(bloc);
-//     water_beach.rotation.y = 1.58;
-//   }
-// }
-
-// const water_beach_p2 = new THREE.Group();
-// scene.add(water_beach_p2);
-// water_beach_p2.position.set(-21, 1, 9);
-
-// for (let x = 0; x < 4; x++) {
-//   for (let y = 0; y < 50; y++) {
-//     const bloc = new THREE.Mesh(
-//       new THREE.BoxGeometry(1, 1, 1),
-//       new THREE.MeshBasicMaterial({ map: water })
-//     );
-//     bloc.position.set(x, -y, -3);
-//     water_beach_p2.add(bloc);
-//     water_beach_p2.rotation.y = 0;
-//   }
-// }
-
-// const water_beach_p3 = new THREE.Group();
-// scene.add(water_beach_p3);
-// water_beach_p3.position.set(-21.085, 1, -1.97);
-
-// for (let x = 0; x < 4; x++) {
-//   for (let y = 0; y < 50; y++) {
-//     const bloc = new THREE.Mesh(
-//       new THREE.BoxGeometry(1, 1, 1),
-//       new THREE.MeshBasicMaterial({ map: water })
-//     );
-//     bloc.position.set(x, -y, -3);
-//     water_beach_p3.add(bloc);
-//     water_beach_p3.rotation.y = 0;
-//   }
-// }
-
 water.colorSpace = THREE.SRGBColorSpace;
 water.repeat.set(1, 1);
 water.wrapS = THREE.RepeatWrapping;

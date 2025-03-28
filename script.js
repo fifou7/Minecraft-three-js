@@ -484,64 +484,71 @@ const water = TextureLoader.load("/water_placeholder.png");
 // water
 
 const water_beach = new THREE.Group();
-scene.add(water_beach);
 water_beach.position.set(-18, 1, 5);
+scene.add(water_beach);
 
-for (let x = 0; x < 10; x++) {
-  for (let z = 0; z < 4; z++) {
-    const bloc = new THREE.Mesh(
-      new THREE.BoxGeometry(1, 1, 1),
-      new THREE.MeshBasicMaterial({ map: water })
-    );
-    bloc.position.set(x, 0, -z);
-    water_beach.add(bloc);
-    water_beach.rotation.y = 1.58;
-  }
-}
+const waterBlock = new THREE.Mesh(
+  new THREE.BoxGeometry(5, 10, 14),
+  new THREE.MeshBasicMaterial({ map: water })
+);
+waterBlock.position.set(-20, -3.5, 0);
+scene.add(waterBlock);
 
-for (let x = 0; x < 10; x++) {
-  for (let y = 0; y < 50; y++) {
-    const bloc = new THREE.Mesh(
-      new THREE.BoxGeometry(1, 1, 1),
-      new THREE.MeshBasicMaterial({ map: water })
-    );
-    bloc.position.set(x, -y, -3);
-    water_beach.add(bloc);
-    water_beach.rotation.y = 1.58;
-  }
-}
+// for (let x = 0; x < 10; x++) {
+//   for (let z = 0; z < 4; z++) {
+//     const bloc = new THREE.Mesh(
+//       new THREE.BoxGeometry(1, 1, 1),
+//       new THREE.MeshBasicMaterial({ map: water })
+//     );
+//     bloc.position.set(x, 0, -z);
+//     water_beach.add(bloc);
+//     water_beach.rotation.y = 1.58;
+//   }
+// }
 
-const water_beach_p2 = new THREE.Group();
-scene.add(water_beach_p2);
-water_beach_p2.position.set(-21, 1, 9);
+// for (let x = 0; x < 10; x++) {
+//   for (let y = 0; y < 50; y++) {
+//     const bloc = new THREE.Mesh(
+//       new THREE.BoxGeometry(1, 1, 1),
+//       new THREE.MeshBasicMaterial({ map: water })
+//     );
+//     bloc.position.set(x, -y, -3);
+//     water_beach.add(bloc);
+//     water_beach.rotation.y = 1.58;
+//   }
+// }
 
-for (let x = 0; x < 4; x++) {
-  for (let y = 0; y < 50; y++) {
-    const bloc = new THREE.Mesh(
-      new THREE.BoxGeometry(1, 1, 1),
-      new THREE.MeshBasicMaterial({ map: water })
-    );
-    bloc.position.set(x, -y, -3);
-    water_beach_p2.add(bloc);
-    water_beach_p2.rotation.y = 0;
-  }
-}
+// const water_beach_p2 = new THREE.Group();
+// scene.add(water_beach_p2);
+// water_beach_p2.position.set(-21, 1, 9);
 
-const water_beach_p3 = new THREE.Group();
-scene.add(water_beach_p3);
-water_beach_p3.position.set(-21.085, 1, -1.97);
+// for (let x = 0; x < 4; x++) {
+//   for (let y = 0; y < 50; y++) {
+//     const bloc = new THREE.Mesh(
+//       new THREE.BoxGeometry(1, 1, 1),
+//       new THREE.MeshBasicMaterial({ map: water })
+//     );
+//     bloc.position.set(x, -y, -3);
+//     water_beach_p2.add(bloc);
+//     water_beach_p2.rotation.y = 0;
+//   }
+// }
 
-for (let x = 0; x < 4; x++) {
-  for (let y = 0; y < 50; y++) {
-    const bloc = new THREE.Mesh(
-      new THREE.BoxGeometry(1, 1, 1),
-      new THREE.MeshBasicMaterial({ map: water })
-    );
-    bloc.position.set(x, -y, -3);
-    water_beach_p3.add(bloc);
-    water_beach_p3.rotation.y = 0;
-  }
-}
+// const water_beach_p3 = new THREE.Group();
+// scene.add(water_beach_p3);
+// water_beach_p3.position.set(-21.085, 1, -1.97);
+
+// for (let x = 0; x < 4; x++) {
+//   for (let y = 0; y < 50; y++) {
+//     const bloc = new THREE.Mesh(
+//       new THREE.BoxGeometry(1, 1, 1),
+//       new THREE.MeshBasicMaterial({ map: water })
+//     );
+//     bloc.position.set(x, -y, -3);
+//     water_beach_p3.add(bloc);
+//     water_beach_p3.rotation.y = 0;
+//   }
+// }
 
 water.colorSpace = THREE.SRGBColorSpace;
 water.repeat.set(1, 1);
@@ -1135,8 +1142,6 @@ const blocNiveau5_île5 = new THREE.Mesh(
 );
 blocNiveau5_île5.position.set(4.5, -5, -4.5); // Centré
 île5.add(blocNiveau5_île5);
-
-renderer.render(scene, camera);
 
 const keysPressed = {
   ArrowUp: false,
